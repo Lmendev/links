@@ -7,16 +7,79 @@
     <title>@lmendev | Luis Mendoza</title>
     <meta name="description" content="Luis Mendoza"/>
     <style>
+        :root{
+            --primary: #aaa;
+            --primary-variant: #aaa;
+            --secondary: #aaa;
+            --secondary-variant: #aaa;
+            --background: #aaa;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
         h2{
             display: none;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 1rem;
+        }
+
+        header img{
+            border-radius: 50%;
+            width: 10rem;
+        }
+
+        header h1{
+            margin: .25rem;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        main ul {
+            list-style: none;
+            padding: 0;
+            width: 100%;
+            margin: 0;
+        }
+
+        main ul li a{
+            text-decoration: none;
+        }
+
+        .social-item {
+            display: flex;
+            align-items: center;
+            background-color: antiquewhite;
+            gap: .25rem;
+        }
+
+        .social-item {
+            margin: 1rem;
+        }
+
+        .social-item img {
+            width: 4rem;
+            margin-left: calc(50vw - 5.25rem);
         }
 
     </style>
 </head>
 <body>
     <header>
-        <img src="https://media-exp1.licdn.com/dms/image/C4E03AQHhWKYy8ReTRg/profile-displayphoto-shrink_800_800/0/1610908841444?e=1639008000&v=beta&t=xONdNCPdtnxRprIi8MiIe4FmUvXMkUK1ghFfR5f7jTA" alt="">
+        <img src="https://media-exp1.licdn.com/dms/image/C4E03AQHhWKYy8ReTRg/profile-displayphoto-shrink_800_800/0/1610908841444?e=1639008000&v=beta&t=xONdNCPdtnxRprIi8MiIe4FmUvXMkUK1ghFfR5f7jTA" alt="profile img">
         <h1>@lmendev</h1>
         <p>👨‍💻 Frontend developer specialist</p>
     </header>
@@ -25,21 +88,30 @@
         <h2>Social links</h2>
         <ul>
             <li>
-                <article>
-                    email
-                </article>
+                <a href="">
+                    <div class="social-item">
+                        <img src="https://cdn4.iconfinder.com/data/icons/social-media-2273/64/social_media_network_online_gmail_google-256.png" alt="">
+                        email
+                    </div>
+                </a>
             </li>
 
             <li>
-                <article>
-                    linkedin
-                </article>
+                <a href="">
+                    <div class="social-item">
+                        <img src="https://cdn4.iconfinder.com/data/icons/social-media-2273/64/social_media_network_online_linkedin-256.png" alt="">
+                        linkedin
+                    </div>
+                </a>
             </li>
 
             <li>
-                <article>
-                    github
-                </article>
+                <a href="">
+                    <div class="social-item">
+                        <img src="https://cdn4.iconfinder.com/data/icons/social-media-2273/64/social_network_media_online-256.png" alt="">
+                        github
+                    </div>
+                </a>
             </li>
         </ul>
     </main>
