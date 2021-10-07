@@ -7,7 +7,9 @@
 
     --social-item-margin: 1rem;
     --social-item-gap: .25rem;
-    --social-item-img-width: 4rem;
+    --social-item-img-width: 2.75rem;
+
+    --main-ul-max-width: 30rem;
 }
 
 @font-face {
@@ -23,7 +25,7 @@ body {
     color: var(--primary);
 }
 
-h2{
+h2 {
     display: none;
 }
 
@@ -68,13 +70,16 @@ main ul li a{
     border-radius: .75rem;
     color: var(--primary);
     border: 1px solid var(--secondary);
-}
-
-.social-item {
     margin: var(--social-item-margin);
+    padding: .25rem;
+
+    /*
+    box-shadow: 1px 1px 4px var(--primary);
+    */
 }
 
 .social-item img {
     width: var(--social-item-img-width);
     margin-left: calc(50vw - var(--social-item-margin) - var(--social-item-img-width) - var(--social-item-gap));
+    filter: invert(37%) sepia(7%) saturate(1113%) hue-rotate(215deg) brightness(90%) contrast(88%);
 }
