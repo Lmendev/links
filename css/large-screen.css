@@ -1,0 +1,3 @@
+main ul{
+    max-width: var(--main-ul-max-width);
+}
