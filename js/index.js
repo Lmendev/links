@@ -2,14 +2,17 @@ const toggleThemeSwitch = document.getElementById("toggle-theme-buttom")
 
 const toggleDarkTheme = () => {
     document.body.classList.toggle('dark-theme')
-    toggleThemeSwitch.classList.toggle('active')
+    //toggleThemeSwitch.checked = !toggleThemeSwitch.checked
 }
 
-if (window.matchMedia?.('(prefers-color-scheme: dark)').matches)
-    toggleDarkTheme()
+toggleThemeSwitch.addEventListener('click', () => { toggleDarkTheme() })
+
+if (window.matchMedia?.('(prefers-color-scheme: dark)').matches){
+    toggleThemeSwitch.click()
+    //toggleDarkTheme()
+}
 
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
     const newColorScheme = e.matches ? "dark" : "light";
 })
 
-toggleThemeSwitch.addEventListener('click', () => { toggleDarkTheme() })
