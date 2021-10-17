@@ -1,9 +1,3 @@
-
-
 main ul{
     max-width: var(--main-ul-max-width);
-}
-
-.social-item img {
-    margin-left: calc(50vw - var(--social-item-margin) - var(--social-item-img-width) - var(--social-item-gap) - ( (100vw - var(--main-ul-max-width)) / 2 )  );
 }
