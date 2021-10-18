@@ -63,7 +63,7 @@ header {
 }
 
 #toggle-theme-container{
-    margin-left: calc(var(--main-ul-max-width) * .7 );
+    margin-left: 70vw;
 }
 
 header img{
@@ -139,7 +139,7 @@ footer img {
 	position: relative;
 	height: 26px;
 	width: 50px;
-	transform: scale(1.5);
+	transform: scale(1.2);
 }
 
 .label .ball {
