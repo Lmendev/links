@@ -1,3 +1,7 @@
 main ul{
     max-width: var(--main-ul-max-width);
 }
+
+#toggle-theme-container{
+    margin-left: 25rem;
+}
